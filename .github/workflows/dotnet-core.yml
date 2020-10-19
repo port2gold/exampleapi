@@ -24,6 +24,6 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           repository: ${{ secrets.DOCKER_HUB_REPOSITORY }}
       - run: |
-            docker build -t exampleapi dockasign
+            docker build -t testing_01 dockasign
             docker tag exampleapi ${{ secrets.DOCKER_HUB_REPOSITORY }}
             docker push ${{ secrets.DOCKER_HUB_REPOSITORY }}
