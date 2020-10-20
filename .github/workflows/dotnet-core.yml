@@ -25,5 +25,5 @@ jobs:
           repository: ${{ secrets.DOCKER_HUB_REPOSITORY }}
       - run: |
             docker build -t testing_01 dockasign
-            docker tag testing_01 37358684/testing_01            
+            docker tag testing_01 8137358684/testing_01            
             docker push ${{ secrets.DOCKER_HUB_REPOSITORY }}
